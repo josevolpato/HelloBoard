@@ -22,7 +22,6 @@ C:\Users\jhcv\Desktop\HelloBoard\obj\x64\Debug\App.xbf
 C:\Users\jhcv\Desktop\HelloBoard\obj\x64\Debug\MainPage.xbf
 C:\Users\jhcv\Desktop\HelloBoard\obj\x64\Debug\XamlSaveStateFile.xml
 C:\Users\jhcv\Desktop\HelloBoard\obj\x64\Debug\HelloBoard.csproj.CoreCompileInputs.cache
-C:\Users\jhcv\Desktop\HelloBoard\obj\x64\Debug\HelloBoard.csproj.CopyComplete
 C:\Users\jhcv\Desktop\HelloBoard\obj\x64\Debug\HelloBoard.exe
 C:\Users\jhcv\Desktop\HelloBoard\obj\x64\Debug\HelloBoard.pdb
 C:\Users\jhcv\Desktop\HelloBoard\obj\x64\Debug\ResourceHandlingTask.state
