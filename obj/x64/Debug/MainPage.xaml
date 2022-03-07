@@ -8,8 +8,9 @@
     mc:Ignorable="d"
     Background="{ThemeResource SystemControlAcrylicWindowBrush}">
 
-    <Grid>
+    <Canvas>
+        <local:StickyNote Canvas.Top="300" Canvas.Left="80"></local:StickyNote>
 
-    </Grid>
+    </Canvas>
 </Page>
 

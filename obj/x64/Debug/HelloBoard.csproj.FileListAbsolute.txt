@@ -42,3 +42,8 @@ C:\Users\jhcv\Desktop\HelloBoard\obj\x64\Debug\qualifiers.txt.intermediate
 C:\Users\jhcv\Desktop\HelloBoard\obj\x64\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\jhcv\Desktop\HelloBoard\obj\x64\Debug\ProjectArchitectures.txt
 C:\Users\jhcv\Desktop\HelloBoard\obj\x64\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_637424923200000000.json
+C:\Users\jhcv\Desktop\HelloBoard\bin\x64\Debug\StickyNote.xbf
+C:\Users\jhcv\Desktop\HelloBoard\obj\x64\Debug\StickyNote.g.i.cs
+C:\Users\jhcv\Desktop\HelloBoard\obj\x64\Debug\StickyNote.g.cs
+C:\Users\jhcv\Desktop\HelloBoard\obj\x64\Debug\StickyNote.xaml
+C:\Users\jhcv\Desktop\HelloBoard\obj\x64\Debug\StickyNote.xbf
