@@ -26,5 +26,26 @@ namespace HelloBoard
         {
             this.InitializeComponent();
         }
+
+        private void btnAddCol1_Click(object sender, RoutedEventArgs e)
+        {
+            Button btn = new Button();
+            btn.Content = "Item coluna 1";
+            spCol1.Children.Add(btn);
+        }
+
+        private void btnAddCol2_Click(object sender, RoutedEventArgs e)
+        {
+            Button btn = new Button();
+            btn.Content = "Item coluna 2";
+            spCol2.Children.Add(btn);
+        }
+
+        private void btnAddCol3_Click(object sender, RoutedEventArgs e)
+        {
+            Button btn = new Button();
+            btn.Content = "Item coluna 3";
+            spCol3.Children.Add(btn);
+        }
     }
 }

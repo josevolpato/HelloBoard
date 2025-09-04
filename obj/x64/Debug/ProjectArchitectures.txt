@@ -1,1 +1,1 @@
-C:\Users\jhcv\Desktop\HelloBoard\HelloBoard.csproj;x64
+D:\Code\csharp\HelloBoard\HelloBoard.csproj;x64

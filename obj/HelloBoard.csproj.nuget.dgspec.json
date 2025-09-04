@@ -1,25 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jhcv\\Desktop\\HelloBoard\\HelloBoard.csproj": {}
+    "D:\\Code\\csharp\\HelloBoard\\HelloBoard.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jhcv\\Desktop\\HelloBoard\\HelloBoard.csproj": {
+    "D:\\Code\\csharp\\HelloBoard\\HelloBoard.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jhcv\\Desktop\\HelloBoard\\HelloBoard.csproj",
+        "projectUniqueName": "D:\\Code\\csharp\\HelloBoard\\HelloBoard.csproj",
         "projectName": "HelloBoard",
-        "projectPath": "C:\\Users\\jhcv\\Desktop\\HelloBoard\\HelloBoard.csproj",
-        "packagesPath": "C:\\Users\\jhcv\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jhcv\\Desktop\\HelloBoard\\obj\\",
+        "projectPath": "D:\\Code\\csharp\\HelloBoard\\HelloBoard.csproj",
+        "packagesPath": "C:\\Users\\José Volpato\\.nuget\\packages\\",
+        "outputPath": "D:\\Code\\csharp\\HelloBoard\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
+        "UsingMicrosoftNETSdk": false,
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "D:\\Aplicativos\\Microsoft Visual Studio\\Shared\\NuGetPackages",
           "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\jhcv\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\José Volpato\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -34,6 +35,11 @@
           "uap10.0.17763": {
             "projectReferences": {}
           }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "all"
         }
       },
       "frameworks": {

@@ -9,7 +9,24 @@
     Background="{ThemeResource SystemControlAcrylicWindowBrush}">
 
     <Canvas>
-        <local:StickyNote Canvas.Top="300" Canvas.Left="80"></local:StickyNote>
-
+        <Grid x:Name="gdBoard" Height="625" Width="1280" HorizontalAlignment="Center" VerticalAlignment="Top" Canvas.Top="95">
+            <FlyoutBase.AttachedFlyout>
+                <MenuFlyout/>
+            </FlyoutBase.AttachedFlyout>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <StackPanel x:Name="spCol1"/>
+            <StackPanel x:Name="spCol2" Grid.Column="1"/>
+            <StackPanel x:Name="spCol3" Grid.Column="2"/>
+        </Grid>
+        <Button x:Name="btnAddCol1" Content="Adicionar" Canvas.Left="90" Canvas.Top="32" Width="160" VerticalAlignment="Top" Click="btnAddCol1_Click"/>
+        <Button x:Name="btnAddCol2" Content="Adicionar" Canvas.Left="560" Canvas.Top="32" Width="160" Click="btnAddCol2_Click"/>
+        <Button x:Name="btnAddCol3" Content="Adicionar" Canvas.Left="1020" Canvas.Top="32" Width="160" Click="btnAddCol3_Click"/>
     </Canvas>
 </Page>
