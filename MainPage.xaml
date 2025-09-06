@@ -9,10 +9,21 @@
     Background="{ThemeResource SystemControlAcrylicWindowBrush}">
 
     <Canvas>
+        <MenuBar HorizontalAlignment="Left">
+            <MenuBarItem Title="Arquivo">
+                <MenuFlyoutItem Text="Flyout Item1"/>
+            </MenuBarItem>
+            <MenuBarItem Title="Editar">
+                <MenuFlyoutItem Text="Flyout Item1"/>
+            </MenuBarItem>
+            <MenuBarItem Title="Exibir">
+                <MenuFlyoutItem Text="Flyout Item1"/>
+            </MenuBarItem>
+            <MenuBarItem Title="Ajuda">
+                <MenuFlyoutItem Text="Flyout Item1"/>
+            </MenuBarItem>
+        </MenuBar>
         <Grid x:Name="gdBoard" Height="625" Width="1280" HorizontalAlignment="Center" VerticalAlignment="Top" Canvas.Top="95">
-            <FlyoutBase.AttachedFlyout>
-                <MenuFlyout/>
-            </FlyoutBase.AttachedFlyout>
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
