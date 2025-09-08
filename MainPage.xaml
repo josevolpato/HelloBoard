@@ -9,35 +9,42 @@
     Background="{ThemeResource SystemControlAcrylicWindowBrush}">
 
     <Canvas>
-        <MenuBar HorizontalAlignment="Left">
-            <MenuBarItem Title="Arquivo">
-                <MenuFlyoutItem Text="Flyout Item1"/>
-            </MenuBarItem>
-            <MenuBarItem Title="Editar">
-                <MenuFlyoutItem Text="Flyout Item1"/>
-            </MenuBarItem>
-            <MenuBarItem Title="Exibir">
-                <MenuFlyoutItem Text="Flyout Item1"/>
-            </MenuBarItem>
-            <MenuBarItem Title="Ajuda">
-                <MenuFlyoutItem Text="Flyout Item1"/>
-            </MenuBarItem>
-        </MenuBar>
-        <Grid x:Name="gdBoard" Height="625" Width="1280" HorizontalAlignment="Center" VerticalAlignment="Top" Canvas.Top="95">
+        <Grid VerticalAlignment="Top" Width="1270" Height="720">
             <Grid.RowDefinitions>
-                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="auto" />
+                <RowDefinition />
             </Grid.RowDefinitions>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition />
-                <ColumnDefinition />
-                <ColumnDefinition />
-            </Grid.ColumnDefinitions>
-            <StackPanel x:Name="spCol1"/>
-            <StackPanel x:Name="spCol2" Grid.Column="1"/>
-            <StackPanel x:Name="spCol3" Grid.Column="2"/>
+            <MenuBar HorizontalAlignment="Stretch" VerticalAlignment="Top">
+                <MenuBarItem Title="Arquivo">
+                    <MenuFlyoutItem Text="Novo quadro"/>
+                    <MenuFlyoutItem Text="Abrir"/>
+                    <MenuFlyoutItem Text="Fechar"/>
+                </MenuBarItem>
+                <MenuBarItem Title="Editar">
+                    <MenuFlyoutItem Text="Adicionar cartão"/>
+                    <MenuFlyoutItem Text="Copiar texto"/>
+                    <MenuFlyoutItem Text="Substituir texto"/>
+                </MenuBarItem>
+                <MenuBarItem Title="Exibir">
+                    <MenuFlyoutItem Text="Número de colunas"/>
+                </MenuBarItem>
+                <MenuBarItem Title="Ajuda">
+                    <MenuFlyoutItem Text="Sobre"/>
+                </MenuBarItem>
+            </MenuBar>
+            <Grid x:Name="gdBoard" Grid.Row="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <StackPanel x:Name="spCol1"/>
+                <StackPanel x:Name="spCol2" Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                <StackPanel x:Name="spCol3" Grid.Column="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+            </Grid>
         </Grid>
-        <Button x:Name="btnAddCol1" Content="Adicionar" Canvas.Left="90" Canvas.Top="32" Width="160" VerticalAlignment="Top" Click="btnAddCol1_Click"/>
-        <Button x:Name="btnAddCol2" Content="Adicionar" Canvas.Left="560" Canvas.Top="32" Width="160" Click="btnAddCol2_Click"/>
-        <Button x:Name="btnAddCol3" Content="Adicionar" Canvas.Left="1020" Canvas.Top="32" Width="160" Click="btnAddCol3_Click"/>
     </Canvas>
 </Page>
