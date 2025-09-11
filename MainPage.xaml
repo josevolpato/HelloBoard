@@ -16,9 +16,10 @@
             </Grid.RowDefinitions>
             <MenuBar HorizontalAlignment="Stretch" VerticalAlignment="Top">
                 <MenuBarItem Title="Arquivo">
-                    <MenuFlyoutItem Text="Novo quadro"/>
-                    <MenuFlyoutItem Text="Abrir"/>
-                    <MenuFlyoutItem Text="Fechar"/>
+                    <MenuFlyoutItem x:Name="mfiNewBoard" Text="Novo quadro" Click="mfiNewBoard_Click"/>
+                    <MenuFlyoutItem Text="Abrir" />
+                    <MenuFlyoutItem Text="Fechar" />
+                    <MenuFlyoutItem x:Name="mfiClose" Text="Sair" Click="mfiClose_Click" />
                 </MenuBarItem>
                 <MenuBarItem Title="Editar">
                     <MenuFlyoutItem Text="Adicionar cartão"/>

@@ -27,6 +27,26 @@ namespace HelloBoard
             this.InitializeComponent();
         }
 
+        private void mfiClose_Click(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Exit();
+        }
+
+        private void mfiNewBoard_Click(object sender, RoutedEventArgs e)
+        {
+            gdBoard.Children.Clear();
+            gdBoard.ColumnDefinitions.Clear();
+            for (int i = 0; i < 3; i++)
+            {
+                gdBoard.ColumnDefinitions.Add(new ColumnDefinition());
+                Button b = new Button();
+                b.Content = i.ToString();
+                Grid.SetColumn(b, i);
+                gdBoard.Children.Add(b);
+            }
+
+        }
+
         //Button btn = new Button();
         //btn.Content = "Item coluna 1";
         //spCol1.Children.Add(btn);
