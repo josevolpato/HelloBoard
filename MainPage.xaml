@@ -14,7 +14,7 @@
                 <RowDefinition Height="auto" />
                 <RowDefinition />
             </Grid.RowDefinitions>
-            <MenuBar HorizontalAlignment="Stretch" VerticalAlignment="Top">
+            <MenuBar HorizontalAlignment="Left" VerticalAlignment="Top">
                 <MenuBarItem Title="Arquivo">
                     <MenuFlyoutItem x:Name="mfiNewBoard" Text="Novo quadro" Click="mfiNewBoard_Click"/>
                     <MenuFlyoutItem Text="Abrir" />
@@ -33,6 +33,7 @@
                     <MenuFlyoutItem Text="Sobre"/>
                 </MenuBarItem>
             </MenuBar>
+            <Slider Maximum="7" Minimum="2" Value="3" HorizontalAlignment="Left" Margin="255,0,0,0" Width="188" StepFrequency="1" SnapsTo="StepValues" />
             <Grid x:Name="gdBoard" Grid.Row="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="1*"/>
