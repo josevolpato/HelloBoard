@@ -34,21 +34,27 @@ namespace HelloBoard
 
         private void mfiNewBoard_Click(object sender, RoutedEventArgs e)
         {
+            SetBoardColumnNumber(3);
+        }
+
+        private void Slider_ValueChanged(object sender, RangeBaseValueChangedEventArgs e)
+        {
+            SetBoardColumnNumber((int) e.NewValue);
+        }
+
+        private void SetBoardColumnNumber(int number)
+        {
             gdBoard.Children.Clear();
             gdBoard.ColumnDefinitions.Clear();
-            for (int i = 0; i < 3; i++)
+            for (int i = 0; i < number; i++)
             {
-                gdBoard.ColumnDefinitions.Add(new ColumnDefinition());
+                ColumnDefinition cd = new ColumnDefinition();
+                gdBoard.ColumnDefinitions.Add(cd);
                 Button b = new Button();
                 b.Content = i.ToString();
                 Grid.SetColumn(b, i);
                 gdBoard.Children.Add(b);
             }
-
         }
-
-        //Button btn = new Button();
-        //btn.Content = "Item coluna 1";
-        //spCol1.Children.Add(btn);
     }
 }

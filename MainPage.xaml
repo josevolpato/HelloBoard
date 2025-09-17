@@ -8,45 +8,43 @@
     mc:Ignorable="d"
     Background="{ThemeResource SystemControlAcrylicWindowBrush}">
 
-    <Canvas>
-        <Grid VerticalAlignment="Top" Width="1270" Height="720">
+    <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch" BorderThickness="1,1,1,1" BorderBrush="Red" >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <MenuBar HorizontalAlignment="Left" VerticalAlignment="Top">
+            <MenuBarItem Title="Arquivo">
+                <MenuFlyoutItem x:Name="mfiNewBoard" Text="Novo quadro" Click="mfiNewBoard_Click"/>
+                <MenuFlyoutItem Text="Abrir" />
+                <MenuFlyoutItem Text="Fechar" />
+                <MenuFlyoutItem x:Name="mfiClose" Text="Sair" Click="mfiClose_Click" />
+            </MenuBarItem>
+            <MenuBarItem Title="Editar">
+                <MenuFlyoutItem Text="Adicionar cartão"/>
+                <MenuFlyoutItem Text="Copiar texto"/>
+                <MenuFlyoutItem Text="Substituir texto"/>
+            </MenuBarItem>
+            <MenuBarItem Title="Exibir">
+                <MenuFlyoutItem Text="Número de colunas"/>
+            </MenuBarItem>
+            <MenuBarItem Title="Ajuda">
+                <MenuFlyoutItem Text="Sobre"/>
+            </MenuBarItem>
+        </MenuBar>
+        <Grid x:Name="gdBoard" Grid.Row="1" BorderBrush="#FF0075FF" BorderThickness="1,1,1,1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
             <Grid.RowDefinitions>
-                <RowDefinition Height="auto" />
-                <RowDefinition />
+                <RowDefinition Height="1*"/>
             </Grid.RowDefinitions>
-            <MenuBar HorizontalAlignment="Left" VerticalAlignment="Top">
-                <MenuBarItem Title="Arquivo">
-                    <MenuFlyoutItem x:Name="mfiNewBoard" Text="Novo quadro" Click="mfiNewBoard_Click"/>
-                    <MenuFlyoutItem Text="Abrir" />
-                    <MenuFlyoutItem Text="Fechar" />
-                    <MenuFlyoutItem x:Name="mfiClose" Text="Sair" Click="mfiClose_Click" />
-                </MenuBarItem>
-                <MenuBarItem Title="Editar">
-                    <MenuFlyoutItem Text="Adicionar cartão"/>
-                    <MenuFlyoutItem Text="Copiar texto"/>
-                    <MenuFlyoutItem Text="Substituir texto"/>
-                </MenuBarItem>
-                <MenuBarItem Title="Exibir">
-                    <MenuFlyoutItem Text="Número de colunas"/>
-                </MenuBarItem>
-                <MenuBarItem Title="Ajuda">
-                    <MenuFlyoutItem Text="Sobre"/>
-                </MenuBarItem>
-            </MenuBar>
-            <Slider Maximum="7" Minimum="2" Value="3" HorizontalAlignment="Left" Margin="255,0,0,0" Width="188" StepFrequency="1" SnapsTo="StepValues" />
-            <Grid x:Name="gdBoard" Grid.Row="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="1*"/>
-                </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition />
-                    <ColumnDefinition />
-                    <ColumnDefinition />
-                </Grid.ColumnDefinitions>
-                <StackPanel x:Name="spCol1"/>
-                <StackPanel x:Name="spCol2" Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
-                <StackPanel x:Name="spCol3" Grid.Column="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
-            </Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <StackPanel x:Name="spCol1"/>
+            <StackPanel x:Name="spCol2" Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+            <StackPanel x:Name="spCol3" Grid.Column="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
         </Grid>
-    </Canvas>
+        <Slider Minimum="2" Maximum="7" Value="3" HorizontalAlignment="Left" Margin="255,0,0,0" Width="188" StepFrequency="1" SnapsTo="StepValues" ValueChanged="Slider_ValueChanged" />
+    </Grid>
 </Page>
