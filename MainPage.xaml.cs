@@ -5,6 +5,7 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -46,14 +47,30 @@ namespace HelloBoard
         {
             gdBoard.Children.Clear();
             gdBoard.ColumnDefinitions.Clear();
+            Color[] colors = new Color[7]
+            {
+                Colors.BlueViolet,
+                Colors.Green,
+                Colors.Gray,
+                Colors.Orange,
+                Colors.Red,
+                Colors.Yellow,
+                Colors.Turquoise
+            };
             for (int i = 0; i < number; i++)
             {
                 ColumnDefinition cd = new ColumnDefinition();
                 gdBoard.ColumnDefinitions.Add(cd);
+
+                StackPanel sp = new StackPanel();
+                Grid.SetColumn(sp, i);
+                sp.Background = new SolidColorBrush(colors[i]);
+
                 Button b = new Button();
                 b.Content = i.ToString();
-                Grid.SetColumn(b, i);
-                gdBoard.Children.Add(b);
+
+                sp.Children.Add(b);                
+                gdBoard.Children.Add(sp);
             }
         }
     }
