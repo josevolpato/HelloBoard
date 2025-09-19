@@ -47,7 +47,7 @@ namespace HelloBoard
         {
             gdBoard.Children.Clear();
             gdBoard.ColumnDefinitions.Clear();
-            Color[] colors = new Color[7]
+            Color[] colors =
             {
                 Colors.BlueViolet,
                 Colors.Green,
@@ -66,10 +66,16 @@ namespace HelloBoard
                 Grid.SetColumn(sp, i);
                 sp.Background = new SolidColorBrush(colors[i]);
 
-                Button b = new Button();
-                b.Content = i.ToString();
+                Button b1 = new Button();
+                b1.HorizontalAlignment = HorizontalAlignment.Stretch;
+                b1.Content = i.ToString();
 
-                sp.Children.Add(b);                
+                Button b2 = new Button();
+                b2.HorizontalAlignment = HorizontalAlignment.Stretch;
+                b2.Content = i.ToString();
+
+                sp.Children.Add(b1);
+                sp.Children.Add(b2);
                 gdBoard.Children.Add(sp);
             }
         }
